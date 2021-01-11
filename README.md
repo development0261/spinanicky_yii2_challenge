@@ -1,0 +1,1 @@
+# spinanicky_yii2_challenge
