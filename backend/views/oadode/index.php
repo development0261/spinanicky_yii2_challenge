@@ -99,6 +99,10 @@ $this->title = 'My Yii Application';
 				      	</span>
 				      <span><?= Html::a('Edit',['update','id'=>$oadode['oadode_id']],['class'=>'btn btn-warning']) ?>
 				      	</span>
+
+
+
+				      	
 				      </td>
 				    </tr>
 				<?php endforeach; ?>

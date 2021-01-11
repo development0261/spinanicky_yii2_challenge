@@ -186,8 +186,6 @@ class OadodeController extends Controller
         $descGoods = DescriptionOfGoods::find()
                 ->where(['business_id'=>$queries->id])
                 ->one();
-
-        //$queries = Oadode::findOne($id);
         $mpdf = new mPDF;
         if($queries->lang == 1){
             $lang = "English";
@@ -318,7 +316,6 @@ class OadodeController extends Controller
                 </table>
             </div>
             ');
-        //$mpdf->Output($queries->legal_name.'pdf', $tempPath);
         $name = $queries->legal_name.'.pdf';
         $mpdf->Output($tempPath . $name, \Mpdf\Output\Destination::FILE);
         return $this->redirect(['index']);
